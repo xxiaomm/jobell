@@ -1,0 +1,2 @@
+# offer-radar
+a website could fetch all new positions of companies
