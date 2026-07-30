@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jobell-shared"
+version = "0.1.0"
+description = "Shared DB models and clients for Jobell backend/scraper"
+requires-python = ">=3.11"
+dependencies = [
+    "sqlalchemy>=2.0",
+    "psycopg2-binary>=2.9",
+    "redis>=5.0",
+    "pydantic-settings>=2.2",
+]
+
+[tool.setuptools.packages.find]
+include = ["shared*"]
